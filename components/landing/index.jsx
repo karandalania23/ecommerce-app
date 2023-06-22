@@ -12,7 +12,7 @@ const Landing = () => {
         <div class='bg-[#a072d4]'>
         <Welcome/>
         <Header name='Products -'/>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
                 <Cards/>
             </div>

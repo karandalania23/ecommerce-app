@@ -3,7 +3,7 @@ import React from 'react';
 const Newsletter = () => {
     return(
         <>
-        <div class="pl-16 pr-96 pt-4">
+        <div class="px-16 pt-4">
         <>
   <label
     htmlFor="email-address-icon"
@@ -11,7 +11,7 @@ const Newsletter = () => {
   >
     Your Email
   </label>
-  <div className="relative pr-96">
+  <div className="relative ">
     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
       <svg
         aria-hidden="true"
