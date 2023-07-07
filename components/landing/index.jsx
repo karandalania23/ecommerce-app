@@ -10,23 +10,23 @@ import Newsletter from './newsletter';
 
 const Landing = () => {
 
-    
+
 
     return (
         <>
-        <Navbar/>
-        <div className='bg-[#a072d4]'>
-        <Welcome/>
-        <Header name='Products -'/>
-        
-            <div>
-                <Cards/>
+            <Navbar />
+            <div className='bg-[#a072d4]'>
+                <Welcome />
+                <Header name='Products -' />
+
+                <div>
+                    <Cards />
+                </div>
+
+                <Header name='Sign in for Newsletter -' />
+                <Newsletter />
+                <Footer /><hr />
             </div>
-        
-        <Header name='Sign in for Newsletter -'/>
-        <Newsletter/>
-        <Footer/><hr/>
-        </div>
         </>
     )
 };
