@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 const Cards = () => {
   const [fake, setfake] = useState([]);
@@ -15,10 +14,8 @@ const Cards = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {fake.map((value) => {
-          console.log(value);
+        {fake.map((value, index) => {
           return (
-
             <>
               <div className='p-10'>
 
@@ -44,10 +41,10 @@ const Cards = () => {
                           ${value.price}
                         </span>
                         <a
-                          href="#"
+                          href={`/${index}`}
                           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         >
-                          Add to cart
+                          View
                         </a>
                       </div>
                     </div>
