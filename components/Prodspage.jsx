@@ -8,6 +8,7 @@ export default ({ index }) => {
     const router = useRouter()
     const ind = router.query.prods;
 
+    const [loading,setLoading]=useState(true)
     const [fake, setfake] = useState([]);
     useEffect(() => {
         fakestore();
@@ -16,10 +17,13 @@ export default ({ index }) => {
         const response = await fetch("https://fakestoreapi.com/products");
         const jsondata = await response.json();
         setfake(jsondata);
+        setLoading(false)
     }
     console.log(fake);
     return (
         <>
+        {loading ? <h1>Loading...</h1>:
+        
             <div className='bg-[#a072d4]'>
                 <Navbar />
                 <Welcome />
@@ -66,6 +70,7 @@ export default ({ index }) => {
                 <Newsletter />
                 <Footer /><hr />
             </div>
+        }
         </>
     );
 };
