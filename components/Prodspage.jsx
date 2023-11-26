@@ -22,32 +22,32 @@ export default ({ index }) => {
     console.log(fake);
     return (
         <>
-        {loading ? <h1>Loading...</h1>:
+        {loading ? <div className='text-6xl h-screen w-full bg-[#343434] text-white m-auto p-10'>Loading...</div>:
         
-            <div className='bg-[#a072d4]'>
+            <div className='bg-white'>
                 <Navbar />
                 <Welcome />
 
                 <div className='p-10 md:p-14 grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <img src={fake[ind].image} width={500} />
                     <div>
-                        <div className='text-white font-bold md:font-normal text-4xl md:text-6xl my-10 md:my-5'>{fake[ind].title}</div>
+                        <div className='text-black font-bold md:font-normal text-4xl md:text-6xl my-10 md:my-5'>{fake[ind].title}</div>
                         <div className='px-2'><hr /></div>
-                        <div className='text-white text-5xl font-bold mt-8'>${fake[ind].price}</div>
-                        <div className='text-white mt-2'>Inclusive of all taxes.</div>
+                        <div className='text-black text-5xl font-bold mt-8'>${fake[ind].price}</div>
+                        <div className='text-black mt-2'>Inclusive of all taxes.</div>
                         <div className='mt-3 flex'>
                             <span className="bg-blue-100 text-blue-800 text-lg font-semibold  px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ">
                                 {fake[ind].rating.rate}
-                            </span><div className='text-white mx-2 text-lg'>{fake[ind].rating.count} left in stock.</div>
+                            </span><div className='text-black mx-2 text-lg'>{fake[ind].rating.count} left in stock.</div>
                         </div>
                         <div className='px-2 my-8'><hr /></div>
                         <div className='flex'>
-                            <div className='text-white text-lg font-bold'>Category: </div>
-                            <div className='text-white text-lg capitalize ml-2'>{fake[ind].category}</div>
+                            <div className='text-black text-lg font-bold'>Category: </div>
+                            <div className='text-black text-lg capitalize ml-2'>{fake[ind].category}</div>
                         </div><br />
                         <div className='flex'>
-                            <div className='text-white text-lg font-bold'>Description: </div>
-                            <div className='text-white text-lg capitalize ml-2'>{fake[ind].description}</div>
+                            <div className='text-black text-lg font-bold'>Description: </div>
+                            <div className='text-black text-lg capitalize ml-2'>{fake[ind].description}</div>
                         </div>
                         <div className='px-2 my-8'><hr /></div>
                         <div className='flex'>

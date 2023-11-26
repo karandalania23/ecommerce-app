@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <div className='bg-[#a072d4]'>
+            <div className='bg-[#f2f2f2]'>
                 <Welcome />
                 <Header name='Contact -' />
                 <Conform />

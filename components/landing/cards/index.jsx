@@ -19,13 +19,13 @@ const Cards = () => {
             <>
               <div className='p-10'>
 
-                <div className="w-full h-[600px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full h-[600px] max-w-sm bg-[#343434] border border-gray-200 rounded-lg shadow  dark:border-gray-700">
 
-                  <div className="px-5 pb-5">
+                  <div className="px-5 pb-5 ">
 
-                    <img class="p-8 rounded-t-lg items-center m-auto justify-center" src={value.image} width='250px' alt="product image" />
+                    <img class=" rounded-lg bg-white items-center m-auto mt-10 justify-center w-72 h-80" src={value.image} width='250px' alt="product image" />
                     <div>
-                      <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                      <h5 className="text-xl font-semibold tracking-tight mt-5 text-gray-900 dark:text-white">
                         {value.title}
                       </h5>
 

@@ -4,7 +4,7 @@ const Conform = () => {
   return (
     <>
       <div className='p-10 px-10'>
-        <div className=' bg-[#5b3582] rounded-xl'>
+        <div className=' bg-[#343434] rounded-xl'>
           <form className='p-14'>
             <div className="grid md:grid-cols-2 md:gap-6">
               <div className="relative z-0 w-full mb-6 group">
